@@ -19,9 +19,6 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(bodyParser.json());
 
-// Set the view engine to Pug (Jade)
-app.set('view engine', 'jade');
-app.set('views', path.join(__dirname, 'views'));
 
 // Use the routers
 app.use('/auth', authRouter);
